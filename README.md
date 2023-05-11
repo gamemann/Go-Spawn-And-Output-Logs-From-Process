@@ -7,6 +7,9 @@ The `test` program outputs a random string from the `messages` variable each sec
 
 The `loader` program runs the `test` program five times and outputs their `stdout` and `stderr` pipes to a log file in the `logs/` directory (e.g. `logs/<pid>.log`).
 
+## Motives
+I'm working on a private project which spawns processes from a Go program. However, I wanted to write the `stdout` and `stderr` pipes from these spawned processes to a file so I knew what was going on. Since the project utilized Docker which extended build/test time, I decided to write a separate open source program to achieve this goal since I could easily test things.
+
 ## Building
 You may use `make` via Makefile to build everything easily. Otherwise, you may use `go build loader.go` and `go build test.go` to build the Go programs.
 
