@@ -1,4 +1,4 @@
-# Go Spawn & Debug Process
+# Go Spawn & Output Logs From Process
 This is a small project to demonstrate how to spawn multiple processes from a Go program and have the Go program write their `stdout` and `stderr` lines to a log file.
 
 In this example, we have `test` and `loader` Go programs.
